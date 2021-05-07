@@ -37,8 +37,9 @@
             <div class="card card-3">
                 <div class="card-heading"></div>
                 <div class="card-body">
-                    <h2 class="title">Registration Details </h2> <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='buy.html';}"></iframe>
+                    <h2 class="title">Registration Details </h2>
                         <!-- <form  target="hidden_iframe" onsubmit = "submitted=true;"> -->
+                            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='congrats.html';}"></iframe>        
                             <form method="POST" action = "https://docs.google.com/forms/u/1/d/e/1FAIpQLSewFhwWwFfYGqFldEkgklUsr9lsLTuZgmLK4COPVAfcrmESQA/formResponse" target="hidden_iframe" onsubmit = "submitted=true;">
                         <div class="input-group">
                             <input class="input--style-3" type="text" placeholder="Team Name" name="entry.495921157" id = "teamname"  required>
@@ -65,6 +66,9 @@
                             <input class="input--style-3" type="email" placeholder="Team leader Email" name="entry.1844117450" id="mail"  required>
                         </div>
                         <div class="input-group">
+                            <input class="input--style-3" type="email" placeholder="Team members Email(comma seperated)" name="entry.882529774" id="mail"  required>
+                        </div>
+                        <div class="input-group">
                             <input class="input--style-3" type="name" placeholder="Number of team members" name="entry.1001188541" id = "num" required>
                         </div>
                         <div class="input-group">
@@ -75,7 +79,7 @@
                         </div>
                         
                         <div class="p-t-10">
-                          <button class="btn btn--pill btn--green" type = "submit" onclick="formstorage()">Submit</button>
+                          <button class="btn btn--pill btn--green" type = "submit" >Submit</button>
                           <a href = "index.html"><button class="btn btn--pill btn--green" type ="button" >Prev</button></a>
                         </div>
                     </form>
@@ -95,7 +99,7 @@
         }
     });
     </script>
-   
+      
     <!-- Vendor JS-->
     <script src="vendor/select2/select2.min.js"></script>
     <script src="vendor/datepicker/moment.min.js"></script>
