@@ -38,13 +38,13 @@
                 <div class="card-heading"></div>
                 <div class="card-body">
                     <h2 class="title">Registration Details </h2> <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='buy.html';}"></iframe>
-                        <form  target="hidden_iframe" onsubmit = "submitted=true;">
-
+                        <!-- <form  target="hidden_iframe" onsubmit = "submitted=true;"> -->
+                            <form method="POST" action = "https://docs.google.com/forms/u/1/d/e/1FAIpQLSewFhwWwFfYGqFldEkgklUsr9lsLTuZgmLK4COPVAfcrmESQA/formResponse" target="hidden_iframe" onsubmit = "submitted=true;">
                         <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Name" name="entry.148777889" id = "name"  required>
+                            <input class="input--style-3" type="text" placeholder="Team Name" name="entry.495921157" id = "teamname"  required>
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Roll Number" name="entry.223837446" id = "num"  required>
+                            <input class="input--style-3" type="text" placeholder="Team leader name" name="entry.836377545" id = "TLN"  required>
                         </div>
                         <!-- <div class="input-group">
                             <input class="input--style-3 js-datepicker" type="text" placeholder="Birthdate" name="birthday">
@@ -62,16 +62,16 @@
                             </div>
                         </div> -->
                         <div class="input-group">
-                            <input class="input--style-3" type="email" placeholder="Email" name="entry.1205059580" id="mail"  required>
+                            <input class="input--style-3" type="email" placeholder="Team leader Email" name="entry.1844117450" id="mail"  required>
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3" type="name" placeholder="Branch" name="entry.1586985588" id = "branch" required>
+                            <input class="input--style-3" type="name" placeholder="Number of team members" name="entry.1001188541" id = "num" required>
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3" type="number" placeholder="Year of Study" name="entry.598561451" id = "ys"  required>
+                            <input class="input--style-3" type="name" placeholder="College Name" name="entry.241004456" id = "cn"  required>
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3" type="number" placeholder="Mobile Number" name="entry.1382236625" id  = "mob"  required>
+                            <input class="input--style-3" type="number" placeholder="Mobile Number of team leader (whatsapp number)" name="entry.546387365" id  = "mob"  required>
                         </div>
                         
                         <div class="p-t-10">
@@ -95,26 +95,7 @@
         }
     });
     </script>
-    <script>
-    console.log("check")
-    function formstorage(){
-     console.log("done");
-    var name = document.getElementById("name").value;
-    var num  = document.getElementById("num").value; 
-    var mail = document.getElementById("mail").value; 
-    var branch = document.getElementById("branch").value; 
-    var ys = document.getElementById("ys").value; 
-    var mob = document.getElementById("mob").value; 
-    console.log(mob); 
-    localStorage.setItem("name", name);
-    localStorage.setItem("num", num);
-    localStorage.setItem("mail", mail);
-    localStorage.setItem("branch", branch);
-    localStorage.setItem("ys", ys);
-    localStorage.setItem("mob", mob);
    
-    }
-    </script>
     <!-- Vendor JS-->
     <script src="vendor/select2/select2.min.js"></script>
     <script src="vendor/datepicker/moment.min.js"></script>
