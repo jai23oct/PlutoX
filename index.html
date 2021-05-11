@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<style>
+    #text{position: fixed; top: 70vh; margin: 15px; font-size: large;}
+    @media(min-width: 900px) {
+        #text{position: fixed; top: 10vh !important; left: 35vw !important; font-size: large !important;}
+    }
+</style>
 <head>
     <!-- Required meta tags-->
     <meta charset="UTF-8">
@@ -14,7 +19,7 @@
      <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
      <link rel="manifest" href="site.webmanifest">
     <!-- Title Page-->
-    <title>Under Construction </title>
+    <title>Aeromodelling Club IITB </title>
 
     <!-- Icons font CSS-->
     <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
@@ -30,8 +35,8 @@
     <link href="css/main2.css" rel="stylesheet" media="all">
 </head>
 
-<body>
-    <img src = "main_bg.jpg" style="height: 100vh;width: 100vw;">
-    <span style = "position: fixed; top: 10vh; left: 35vw; font-size: large;"> For regestration to Boeing Aeromodelling competition <a href = "main.html" >click here</a> </span>
+<body style = "background-image : url('main_bg.jpg'); background-size: cover;background-repeat: no-repeat;background-color:#ffdb00;" >
+    
+    <span id = "text"> For regestration to Boeing Aeromodelling competition <a href = "main.html" >click here</a> </span>
  </body>
  </html>
