@@ -2,8 +2,11 @@
 <html lang="en">
 <style>
     #text{position: fixed; top: 70vh; margin: 15px; font-size: large;}
+    #logo{display: none;}
     @media(min-width: 900px) {
         #text{position: fixed; top: 10vh !important; left: 35vw !important; font-size: large !important;}
+       
+        #logo{display: inline;position: fixed;top: 5vh;left: 5vw; height: 120px}
     }
 </style>
 <head>
@@ -36,6 +39,7 @@
 </head>
 
 <body style = "background-image : url('main_bg.jpg'); background-size: cover;background-repeat: no-repeat;background-color:#ffdb00;" >
+    <img src="Logo.png" id="logo">
     
     <span id = "text"> For registration to Boeing Aeromodelling competition <a href = "main.html" >click here</a> </span>
  </body>
